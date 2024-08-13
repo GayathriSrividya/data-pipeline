@@ -34,9 +34,6 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '11'
-      
-      - name: Build
-        run: mvn clean install 
 
       - name: Execute coverage report
         run: mvn clean scoverage:report
