@@ -39,7 +39,7 @@ jobs:
         run: mvn clean install 
 
       - name: Execute coverage report
-        run: mvn clean scoverage:report -DCLOUD_STORE_GROUP_ID=$CLOUD_STORE_GROUP_ID -DCLOUD_STORE_ARTIFACT_ID=$CLOUD_STORE_ARTIFACT_ID -DCLOUD_STORE_VERSION=$CLOUD_STORE_VERSION
+        run: mvn clean scoverage:report
 
       - name: Save test results
         if: always()
